@@ -21,7 +21,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    name: "Posts.GetAll",
+    pattern: "{controller=Posts}/{action=GetAll}/{id?}");
 
 app.Run();
